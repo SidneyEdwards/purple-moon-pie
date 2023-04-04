@@ -5,6 +5,16 @@
 .col-h {
   display: flex;
   height: 100%;
+  
+  padding: 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-h2 {
+  display: flex;
+  height: 100%;
+  width: 50%;  
   padding: 0 !important;
   justify-content: center;
   align-items: center;
