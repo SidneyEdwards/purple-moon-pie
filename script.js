@@ -9,8 +9,8 @@ function switchToForm() {
 
 //Log-In button click leads the user to the Log-In Page
 var logInButton = document.getElementById("log-in-btn") 
-logInButton.addEventListener("click", switchToForm)
+logInButton.addEventListener("click", switchToLogIn)
 
-function switchToForm() {
+function switchToLogIn() {
   window.location.href = ("logIn.html")
 }
