@@ -1,0 +1,13 @@
+main {
+  height: 100vh;
+  margin: 0;
+}
+
+
+/* Buttons */
+#log-in-btn {
+  height: 38px;
+  width: 50px;
+  margin: 15px;
+}
+
