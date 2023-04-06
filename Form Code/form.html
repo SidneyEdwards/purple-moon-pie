@@ -25,20 +25,20 @@
       <label for="last-name">Last Name:</label>
         <input type="text"  id="last-name-input">
 
-      <label for="username">Username:</label>
+      <label for="username">Choose a Username:</label>
         <input type="text"  id="username-input">
         
-      <label for="password-input">Password:</label>
+      <label for="password-input">Choose a Password:</label>
         <input type="text"  id="password-input-input">
     </form>
     
     <h3>Add your links for: </h3>
     <h5>Professional Facebook, Instagram, Tiktok, Twitch, Twitter, Youtube, blogs, other GitHub or LinkedIn accounts</h5>
 
-    <label for="password-input">Github Username:</label>
+    <!-- <label for="password-input">Github Username:</label>
     <input type="text"  id="password-input-input">
     <label for="password-input">LinkedIn Username:</label>
-    <input type="text"  id="password-input-input">
+    <input type="text"  id="password-input-input"> -->
 
     <form id="add-links-form">
       <input type="text" id="link-input" name="link-input" placeholder="Enter a link">
@@ -47,9 +47,16 @@
         <li></li>
       </ul>
     </form>
-
-    <button id="createButton">Create my QRYou</button>
-
+    <body class="valign-wrapper" style="height: 100vh; margin: 0;">
+      <div class="container center-align" style="width: 50%; height: 50%;" id="QRCode-container">
+        
+        <div class="row" id="QR-image-container"></div>
+  
+        <input type="text" id="github-username" placeholder="Enter in your Github username">
+        <input type="text" id="LinkedIn-username" placeholder="Enter in your LinkedIn username">
+  
+        <button style="width: 100px" id="go-to-user-homepage">Create My QRYou</button>
+      </div>
 
 </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
