@@ -1,5 +1,8 @@
 var linkFormEl = $('#add-links-form');
 var linkListEl = $('#added-links-list');
+var fetchButton = document.querySelector('#go-to-user-homepage')
+var requestLinkedInURL = ""
+
 
 // create function to handle form submission
 function submitLink(event) {
@@ -23,3 +26,55 @@ linkFormEl.on('submit', submitLink);
 function makeLinkClickable() {
   
 }
+
+function getApiGithub(event) {
+  event.preventDefault();
+  
+  var githubUsername = document.getElementById('github-username').value;
+
+  console.log(githubUsername);
+
+  var requestUrl = 'https://api.github.com/users/' + githubUsername + '/repos';
+  
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+
+    });
+}
+function getApiLinkedIn(event) {
+  event.preventDefault();
+  
+  var LinkedInUsername = document.getElementById('LinkedIn-username').value;
+
+  console.log(githubUsername);
+
+  var requestUrl = 'https://api.github.com/users/' + LinkedInUsername + '/repos';
+  
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+
+    });
+}
+
+
+
+//Getting Started Button Leads the User to the Getting Started Page
+var goToUserHomePage = document.getElementById("go-to-user-homepage") 
+goToUserHomePage.addEventListener("click", switchToForm)
+
+function switchToForm() {
+  window.location.href = ("QRCreate.html");
+}
+
+
+
+fetchButton.addEventListener('click', getApiGithub);
+fetchButton.addEventListener('click', getApiLinkedIn);
