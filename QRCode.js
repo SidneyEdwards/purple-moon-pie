@@ -42,5 +42,9 @@ function getApiLinkedIn(event) {
     });
 }
 
+
+
+
+
 fetchButton.addEventListener('click', getApiGithub);
 fetchButton.addEventListener('click', getApiLinkedIn);
