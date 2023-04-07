@@ -71,7 +71,7 @@ var goToUserHomePage = document.getElementById("go-to-user-homepage")
 goToUserHomePage.addEventListener("click", switchToForm)
 
 function switchToForm() {
-  window.location.href = ("QRCreate.html");
+  window.location.href = ("/QR Create Code/QRCreate.html");
 }
 
 
