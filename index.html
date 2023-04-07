@@ -16,8 +16,8 @@
 
     </header>
     <main class="row">
-        <nav class="row" id="navBar-container">
-            <button id="log-in-btn">Log In</button>
+        <nav class="row light-blue lighten-4" id="navBar-container">
+            <button id="log-in-btn" class="btn">Log In</button>
         </nav>
         <div class="row" id="getting-started-container">
             <div class="col s12 l6 center-align valign-wrapper col-h" id="getting-started-left">
@@ -25,7 +25,7 @@
                     <h1>QRYou</h1>
                 <p class="flow-text">This site will allow you to create a QR code that will lead to a personalized website that consolidates and displays all of their business websites and social media accounts.</p> 
 
-                <button style="height: 50px; width: 100px;"  id="getting-started-btn" class="waves-effect waves-black red">Get Started</button>
+                <button id="getting-started-btn" class="waves-effect waves-black btn">Get Started</button>
                 </div>
             </div>
 
@@ -36,23 +36,67 @@
         </div>
 
         <div class="row" id="example-projects-container">
-            <div class="col l4 push-l1" id="project-1">
-                <div class="col s12 l4 col-h2" id="example-1-project-picture">
-                    <img class="responsive-img" src="https://images.unsplash.com/photo-1603617385189-cee5d82d5032?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="example 1 photo">
+            <div class="col s12 m4" id="project-1">
+                <div class="card">
+                    <div class="card-image" id="example-1-project-picture">
+                        <img class="responsive-img" src="./assets/1450365441679.jpeg" alt="example 1 photo">
+                    </div>
+                    <div class="card-content">This is project-1</div>
+                    <div class="card-action"><button id="modal-btn1" class="btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
+                </div>
+
+                <!-- Modal  Project-1 HTML -->
+
+                <div class="modal" id="modal-project-1">
+                    <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Scan our QRYOU code to view some of our links.</p>
+                        <div id="QRYou-code-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            <div class="col s12 m4" id="project-2">
+                <div class="card">
+                    <div class="card-image" id="example-2-project-picture">
+                        <img class="responsive-img" src="./assets/small_plunge_pool_options.jpg" alt="example 2 photo">
+                    </div>
+                    <div class="card-content">This is project-2</div>
+                    <div class="card-action"><button id="modal-btn2" class="btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
+                </div>
+
+                                <!-- Modal  Project-2 HTML -->
+
+                <div class="modal" id="modal-project-2">
+                    <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Scan our QRYOU code to view some of our links.</p>
+                        <div id="QRYou-code-container"></div>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="col l4 push-l1" id="project-2">
-                <div class="col s12 l4 col-h2" id="example-2-project-picture">
-                    <img class="responsive-img" src="./assets/css/QRyou (2).png" alt="example 2 photo">
+            <div class="col s12 m4" id="project-3">
+                <div class="card">
+                    <div class="card-image" id="example-3-project-picture">
+                        <img class="responsive-img" src="./assets/choosing-the-right-water-feature-design-for-your-yard.webp" alt="example 3 photo">
+                    </div>
+                    <div class="card-content">This is project-3</div>
+                    <div class="card-action"><button id="modal-btn3"class=" btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
                 </div>
-            </div>
 
+                                <!-- Modal  Project-3 HTML -->
 
-            <div class="col l4 push-l1" id="project-3">
-                <div class="col s12 l4 col-h2" id="example-3-project-picture">
-                    <img class="responsive-img" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="example 3 photo">
+                <div class="modal" id="modal-project-3">
+                    <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Scan our QRYOU code to view some of our links.</p>
+                        <div id="QRYou-code-container"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,5 +104,6 @@
 
 
     <script src="./assets/js/init.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>
