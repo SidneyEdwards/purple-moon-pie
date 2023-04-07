@@ -16,7 +16,9 @@ function submitLink(event) {
     return;
   }
   // print to the page
-  linkListEl.append('<a>' + linkItem + '</a>');
+  linkListEl.append('<a href="' + linkItem + '">' + linkItem + '</a>');
+  
+  //linkListEl.append(`<a href="${linkItem}" target="_blank>click me</a>`)
   // clear the form input element
   $('input[name="link-input"]').val('');
 }
