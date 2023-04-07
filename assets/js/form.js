@@ -72,9 +72,36 @@ goToUserHomePage.addEventListener("click", switchToForm)
 
 function switchToForm() {
   location.assign("./QRCreate.html");
+  saveToLocalStorage();
 }
 
 
 
 fetchButton.addEventListener('click', getApiGithub);
 fetchButton.addEventListener('click', getApiLinkedIn);
+
+function saveToLocalStorage() {
+  var firstName = document.getElementById('first-name-input').value;
+  var lastName = document.getElementById('last-name-input').value;
+  var username = document.getElementById('username-input').value;
+  var password = document.getElementById('password-input-input').value;
+  var linkedInUsername = document.getElementById('LinkedIn-username').value;
+  var githubUsername = document.getElementById('github-username').value;
+
+  if (firstName === '') {
+    displayMessage('error', 'First name cannot be blank.');
+  } else if (lastName === '') {
+    displayMessage('error', 'Last name cannot be blank.');
+  } else if (username === '') {
+    displayMessage('error', 'Username cannot be blank.');
+  } else if (password === '') {
+    displayMessage('error', 'password cannot be blank.');
+  } else {
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+    localStorage.setItem('githubUsername', githubUsername);
+    localStorage.setItem('linkedInUsername', linkedInUsername);
+  }
+}
