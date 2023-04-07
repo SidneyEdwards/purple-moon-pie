@@ -15,8 +15,16 @@
   <title>Form Page</title>
 </head>
 
-<body id="form-body">
-  
+<header>
+<nav class="nav-wrapper #004d40 teal darken-4" id="navBar-container"></nav> 
+
+<div class="valign center-align card panel #e0e0e0 grey lighten-3">
+  <img src="./assets/css/QRyou (2).jpg" alt="Q-R-you Logo" class="md-img" id="logo">
+</div>
+</header>
+
+<body id="form-body" class="container center-align">
+
   <div class="container center-align" id="form-container">
     <form class="center-align">
       <label for="first-name">Enter Your First Name:</label>
@@ -39,9 +47,7 @@
     <form id="add-links-form">
       <input type="text" id="link-input" name="link-input" placeholder="Enter a link">
       <button id="btn btn-info">Add Links</button>
-      <ul id="added-links-list">
-        <li></li>
-      </ul>
+      <ul id="added-links-list" ></ul>
     </form>
     <body class="valign-wrapper" style="height: 100vh; margin: 0;">
       <div class="container center-align" style="width: 50%; height: 50%;" id="QRCode-container">
@@ -54,7 +60,7 @@
         <button style="width: 100px" id="go-to-user-homepage">Create My QRYou</button>
       </div>
 
-</div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="./assets/js/form.js"></script>
 </body>
