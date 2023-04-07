@@ -1,12 +1,13 @@
-main {
-  max-height: 100%;
+ /* main {
   margin: 0;
-}
-
-
+  padding; 0;
+} */
 
 
 
 #form-body {
-  height: 100vh;
-}
+
+  margin: 0;
+  padding: 0;
+} 
+

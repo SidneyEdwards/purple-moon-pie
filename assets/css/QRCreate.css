@@ -2,3 +2,9 @@ main {
   max-height: 100%;
   margin: 0;
 }
+
+#logo {
+
+height: auto;
+object-fit: cover;
+}
