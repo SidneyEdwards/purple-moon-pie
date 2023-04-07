@@ -6,7 +6,7 @@ var NewToQRYou = document.getElementById("sign-up")
 NewToQRYou.addEventListener("click", switchToForm2)
 
 function switchToForm2() {
-window.location.href = ("form.html")
+window.location.href = ("/Form Code/form.html")
 };
 
 
