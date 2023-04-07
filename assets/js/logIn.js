@@ -6,7 +6,8 @@ var NewToQRYou = document.getElementById("sign-up")
 NewToQRYou.addEventListener("click", switchToForm2)
 
 function switchToForm2() {
-window.location.href = ("/Form Code/form.html")
+  console.log('hit')
+  location.assign("./form.html")
 };
 
 
@@ -40,7 +41,5 @@ var userLogInButton = document.getElementById("btn btn-info")
 userLogInButton.addEventListener("click", switchToForm)
 
 function switchToForm() {
-  window.location.href = ("/QR Create Code/QRCreate.html")
+  location.assign("./QRCreate.html")
 }
-
-
