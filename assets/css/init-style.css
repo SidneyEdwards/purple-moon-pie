@@ -1,10 +1,11 @@
 main {
   max-height: 100%;
   margin: 0;
+
 }
 
 body {
-  background-color: #ffffff;
+
 }
 
 /* Top Row */
@@ -23,6 +24,7 @@ body {
   padding: 0 !important;
   justify-content: center;
   align-items: center;
+
 }
 
 .col-h2 {
@@ -32,17 +34,21 @@ body {
   padding: 0 !important;
   justify-content: center;
   align-items: center;
+
 }
 
 #log-in-btn {
-  margin-left: 15px;
+margin-left: 15px;
+
 }
 
 
-#getting-started-container {
+.getting-started-container {
   height: 50vh;
   width: 100%;
-  margin: 0;
+  margin: 1%;
+
+
 }
 
 #getting-started-left {
@@ -71,7 +77,7 @@ body {
   font-size: 40px;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: white; /* Black w/ opacity */
+  background-color: rgba(255, 255, 255, 0.584); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -99,8 +105,6 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 
 
