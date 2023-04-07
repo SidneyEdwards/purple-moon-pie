@@ -3,9 +3,17 @@ main {
   margin: 0;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 /* Top Row */
 .row-top {
   height: 500px;
+}
+
+#logo {
+  height: 90%
 }
 
 .col-h {
@@ -27,18 +35,38 @@ main {
 }
 
 
+#log-in-btn {
+  margin-left: 24px;
+  width: 80px;
+  border: none;
+  border-radius: 40px;
+  padding: 4px;
+  background-color: white;
+  
+}
 
+#log-in-btn:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.364);
+  translate: 2px 2px;
+}
 
 
 #getting-started-btn {
   height: 50px;
   width: 100px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ee6e73;
+  color: white;
 }
 
+
+
 #navBar-container {
-  height: 10vh;
+  height: 8%;
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 
