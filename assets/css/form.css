@@ -1,13 +1,24 @@
- /* main {
-  margin: 0;
-  padding; 0;
-} */
-
+main{
+  margin: 10%;
+  padding: 10%;
+}
 
 
 #form-body {
-
   margin: 0;
   padding: 0;
 } 
 
+header {
+
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+
+#logo{
+  max-height:220px;
+  max-width: 220px;
+  border-radius: 10vw;
+}
