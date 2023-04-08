@@ -9,6 +9,13 @@ height: auto;
 object-fit: cover;
 }
 
+.img-wrapper{
+  background:url("https://source.unsplash.com/phIFdC6lA4E");
+  background-size: cover;
+
+
+
+}
 
 #body{
   font-family: Arial;
