@@ -4,10 +4,28 @@ main {
 
 }
 
-.card {
-  background: #13293d;
-  text-align: center;
+#logo {
+  max-height:300px;
+  max-width: 300px;
+  border-radius: 20vw;
+  padding: 50;
+ 
 }
+
+.img-wrapper{
+  background-position: center;
+  background:url("https://source.unsplash.com/phIFdC6lA4E");
+  background-size: cover;
+
+
+
+}
+
+
+/* .card {
+  background: #13293d;
+    text-align: center;
+} */
 
 
 
@@ -21,11 +39,7 @@ body {
   height: 500px;
 }
 
-#logo {
-  max-height:300px;
-  max-width: 300px;
-  border-radius: 10vw;
-}
+
 
 .col-h {
   display: flex;
@@ -59,7 +73,7 @@ margin-left: 15px;
   margin: 1%;
 
 
-}
+} 
 
 #getting-started-left {
   height: 100%;
