@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/QRCreate.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+
+        <link rel="stylesheet" href="./assets/css/QRCreate.css">
+
+
+    <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
     <title>Create My QRYou</title>
 </head>
 
 
 <header>
-        <div class="card">
+        <div id="logo-container" class="card">
             <img id= "logo" src="./assets/css/QRyou (2).jpg" alt="Q-R-you Logo" class="img-responsive">
         </div>
 </header>
@@ -19,7 +27,7 @@
 
 <body class="valign center-align" id="body">
 
-    <p1>Here is your QRYou:</p1>
+    <h1>Here is your QRYou:</h1>
 </div>
 
 <div id="QRYou">
@@ -27,8 +35,15 @@
 </div>
 
 <div>
-    <p1>Add Your QRYou to Swag!</p1>
-        <a href="https://www.vistaprint.com/mlp/everyday-savings-premium-business-cards?PCXTVATINCLUSIVE=&couponCode=PS20&utm_id=2B07039732982706469882&coupon=&partner=google&ps_vtp=11487406039|121359704134||aud-1690092516168:kwd-10593201|c|9013514||g&ps_vtp2=g|business%20card%20design|b|539675651996|||||&gclid=Cj0KCQjw27mhBhC9ARIsAIFsETEMCZyRGJCoCH0rIsDu1I92BxjRGg90IsdMcp5Tw5092NrwfhmXs7YaAgdaEALw_wcB" target="_blank">Link to VistaPrint.com </a>
+    <p1 class="flow-text">Add Your QRYou to Swag!</p1>
+    <a href="https://www.vistaprint.com/mlp/everyday-savings-premium-business-cards?PCXTVATINCLUSIVE=&couponCode=PS20&utm_id=2B07039732982706469882&coupon=&partner=google&ps_vtp=11487406039|121359704134||aud-1690092516168:kwd-10593201|c|9013514||g&ps_vtp2=g|business%20card%20design|b|539675651996|||||&gclid=Cj0KCQjw27mhBhC9ARIsAIFsETEMCZyRGJCoCH0rIsDu1I92BxjRGg90IsdMcp5Tw5092NrwfhmXs7YaAgdaEALw_wcB" target="_blank">Link to VistaPrint.com </a>
+    </div>
+
+    <button id="userToggleBtn" class="btn">Click here to view your user information</button>
+    <div id="user-information-container">
+
+    </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/QRCreate.js"></script>

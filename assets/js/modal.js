@@ -11,19 +11,23 @@ function openModal1() {
 
   function openModal() {
     modal.style.display = "block";
+    return;
   }
 
   openModal()
   
   span.onclick = function() {
     modal.style.display = "none";
+    return;
   }
   
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      return;
     }
   }
+  return;
 }
 
 modalButton1.addEventListener("click", openModal1)
@@ -40,6 +44,7 @@ function openModal2() {
 
   function openModal() {
     modal.style.display = "block";
+    return;
   }
 
   openModal()
@@ -54,6 +59,7 @@ function openModal2() {
       modal.style.display = "none";
     }
   }
+  return;
 }
 
 modalButton2.addEventListener("click", openModal2)
@@ -61,29 +67,30 @@ modalButton2.addEventListener("click", openModal2)
 // Modal 3
 
 
-// var modalButton3 = document.getElementById("modal-btn3");
+var modalButton3 = document.getElementById("modal-btn3");
 
 
-// function openModal3() {
+function openModal3() {
 
-//   var modal = document.getElementById("modal-project-2");
-//   var span = document.getElementsByClassName("close")[0];
+  var modal = document.getElementById("modal-project-2");
+  var span = document.getElementsByClassName("close")[0];
 
-//   function openModal() {
-//     modal.style.display = "block";
-//   }
+  function openModal() {
+    modal.style.display = "block";
+  }
 
-//   openModal3()
+  openModal3()
   
-//   span.onclick = function() {
-//     modal.style.display = "none";
-//   }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
   
-//   window.onclick = function(event) {
-//     if (event.target == modal) {
-//       modal.style.display = "none";
-//     }
-//   }
-// }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  return;
+}
 
-// modalButton3.addEventListener("click", openModal3)
+modalButton3.addEventListener("click", openModal3)

@@ -2,7 +2,7 @@ var linkFormEl = $('#add-links-form');
 var linkListEl = $('#added-links-list');
 var fetchButton = document.querySelector('#go-to-user-homepage')
 var requestLinkedInURL = ""
-
+var localStorageBtn = document.getElementById("submit-local-storage-btn")
 
 // create function to handle form submission
 function submitLink(event) {
@@ -105,3 +105,5 @@ function saveToLocalStorage() {
     localStorage.setItem('linkedInUsername', linkedInUsername);
   }
 }
+
+localStorageBtn.addEventListener("click", saveToLocalStorage)

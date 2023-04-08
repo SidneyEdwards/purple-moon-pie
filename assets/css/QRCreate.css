@@ -31,3 +31,11 @@ header {
   max-width: 200px;
   border-radius: 10vw;
 }
+
+#logo-container {
+  padding: 20px;
+}
+
+#QRYou {
+  margin: 50px;
+}
