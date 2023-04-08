@@ -5,15 +5,18 @@ main {
 }
 
 #logo {
-  max-height:300px;
-  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  max-height:250px;
+  max-width: 250px;
   border-radius: 20vw;
-  padding: 50;
- 
+  justify-content: right;
+  margin-left:40%;
+
+
 }
 
 .img-wrapper{
-  background-position: center;
   background:url("https://source.unsplash.com/phIFdC6lA4E");
   background-size: cover;
 
@@ -62,7 +65,8 @@ body {
 }
 
 #log-in-btn {
-margin-left: 15px;
+
+margin-left: 90%;
 
 }
 

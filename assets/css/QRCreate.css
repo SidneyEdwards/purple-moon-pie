@@ -4,9 +4,12 @@ main {
 }
 
 #logo {
+  height: auto;
+  object-fit: cover;
+  max-height:300px;
+  max-width: 300px;
+  border-radius: 20vw;
 
-height: auto;
-object-fit: cover;
 }
 
 .img-wrapper{
