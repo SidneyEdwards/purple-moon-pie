@@ -20,31 +20,22 @@ main {
 }
 
 
-
-/* .card {
-  background: #13293d;
-    text-align: center;
-} */
-n
-
 .img-wrapper{
   background-position: center;
   background:url("https://source.unsplash.com/phIFdC6lA4E");
   background-size: cover;
 
-
-
 }
 
 
-/* .card {
+ .card {
   background: #13293d;
     text-align: center;
-} */
+} 
 
 .row-top {
   height: 500px;
-
+}
 
 .col-h {
   display: flex;
