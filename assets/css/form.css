@@ -18,7 +18,18 @@ header {
 
 
 #logo{
-  max-height:220px;
-  max-width: 220px;
-  border-radius: 10vw;
+
+  max-height:200px;
+  max-width: 200px;
+  border-radius: 20vw;
+}
+
+.img-wrapper{
+
+  background-position: center;
+  background:url("https://source.unsplash.com/phIFdC6lA4E");
+  background-size: cover;
+
+
+
 }

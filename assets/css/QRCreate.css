@@ -4,12 +4,21 @@ main {
 }
 
 #logo {
+  height: auto;
+  object-fit: cover;
+  max-height:300px;
+  max-width: 300px;
+  border-radius: 20vw;
 
-height: auto;
-object-fit: cover;
 }
 
+.img-wrapper{
+  background:url("https://source.unsplash.com/phIFdC6lA4E");
+  background-size: cover;
 
+
+
+}
 #body{
   font-family: Arial;
   margin: 0;
