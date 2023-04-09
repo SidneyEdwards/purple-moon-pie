@@ -8,8 +8,8 @@ var userInformationBtn = document.getElementById("userToggleBtn")
 var userContainer = document.getElementById("user-information-container")
 
 
-var getQRCode = document.querySelector('#getQRCode-btn')
-var requestQRCodeURL = ""
+// var getQRCode = document.querySelector('#getQRCode-btn')
+// var requestQRCodeURL = ""
 
 
 function getApiQRCode(event) {
@@ -26,8 +26,6 @@ fetch(requestQRCodeUrl)
 
     });
 }
-
-
 
 
 

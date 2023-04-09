@@ -1,6 +1,6 @@
 var linkFormEl = $('#add-links-form');
 var linkListEl = $('#added-links-list');
-var fetchButton = document.querySelector('#go-to-user-homepage')
+// var fetchButton = document.querySelector('#go-to-user-homepage')
 var requestLinkedInURL = ""
 var localStorageBtn = document.getElementById("submit-local-storage-btn")
 
@@ -27,83 +27,63 @@ linkFormEl.on('submit', submitLink);
 
 
 
-function getApiGithub(event) {
-  event.preventDefault();
-  
-  var githubUsername = document.getElementById('github-username').value;
+function getApiGithub(githubUsername) {
+
 
   console.log(githubUsername);
 
   var requestUrl = 'https://api.github.com/users/' + githubUsername + '/repos';
   
-  fetch(requestUrl)
+  var repos= fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data);
 
+
+      return data;
     });
-}
-function getApiLinkedIn(event) {
-  event.preventDefault();
-  
-  var LinkedInUsername = document.getElementById('LinkedIn-username').value;
-
-  console.log(githubUsername);
-
-  var requestUrl = 'https://api.github.com/users/' + LinkedInUsername + '/repos';
-  
-  fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-
-    });
+    return repos;
 }
 
+var goToUserHomePageButton = document.getElementById("go-to-user-homepage") 
+goToUserHomePageButton.addEventListener("click", switchToForm)
 
-
-//Getting Started Button Leads the User to the Getting Started Page
-var goToUserHomePage = document.getElementById("go-to-user-homepage") 
-goToUserHomePage.addEventListener("click", switchToForm)
 
 function switchToForm() {
-  location.assign("./QRCreate.html");
-  saveToLocalStorage();
+ saveToLocalStorage();
+
+
 }
 
 
+async function saveToLocalStorage() {
+  var firstName = document.getElementById('first-name-input').value.trim();
+  var lastName = document.getElementById('last-name-input').value.trim();
+  var username = document.getElementById('username-input').value.trim();
+  var password = document.getElementById('password-input-input').value.trim();
+  var linkedInUsername = document.getElementById('LinkedIn-username').value.trim();
+  var githubUsername = document.getElementById('github-username').value.trim();
 
-fetchButton.addEventListener('click', getApiGithub);
-fetchButton.addEventListener('click', getApiLinkedIn);
+  var gitHubRepos= await getApiGithub(githubUsername);
+  localStorage.setItem ("gitHubRepos", JSON.stringify(gitHubRepos))
 
-function saveToLocalStorage() {
-  var firstName = document.getElementById('first-name-input').value;
-  var lastName = document.getElementById('last-name-input').value;
-  var username = document.getElementById('username-input').value;
-  var password = document.getElementById('password-input-input').value;
-  var linkedInUsername = document.getElementById('LinkedIn-username').value;
-  var githubUsername = document.getElementById('github-username').value;
 
-  if (firstName === '') {
-    displayMessage('error', 'First name cannot be blank.');
-  } else if (lastName === '') {
-    displayMessage('error', 'Last name cannot be blank.');
-  } else if (username === '') {
-    displayMessage('error', 'Username cannot be blank.');
-  } else if (password === '') {
-    displayMessage('error', 'password cannot be blank.');
-  } else {
+
+
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
     localStorage.setItem('githubUsername', githubUsername);
     localStorage.setItem('linkedInUsername', linkedInUsername);
-  }
+
+
+  // setTimeout(function() {
+location.assign("./QRCreate.html")
+  // }, 4000)
+
 }
 
 localStorageBtn.addEventListener("click", saveToLocalStorage)
