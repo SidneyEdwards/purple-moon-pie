@@ -17,9 +17,12 @@ main {
   max-height: 200px;
   max-width: 200px;
   border-radius: 10vw;
+  padding: 50;
+  justify-content: right;
+  margin-left:42%;
 }
 
 .img-wrapper{
   background:url("https://source.unsplash.com/phIFdC6lA4E");
   background-size: cover;
-}
+  }

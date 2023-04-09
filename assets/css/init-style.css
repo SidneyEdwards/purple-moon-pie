@@ -4,19 +4,31 @@ main {
 
 }
 
+
+
 #logo {
   height: auto;
   object-fit: cover;
   max-height:250px;
   max-width: 250px;
   border-radius: 20vw;
+  border-radius: 20vw;
+  padding: 50;
   justify-content: right;
   margin-left:40%;
 
-
 }
 
+
+
+/* .card {
+  background: #13293d;
+    text-align: center;
+} */
+n
+
 .img-wrapper{
+  background-position: center;
   background:url("https://source.unsplash.com/phIFdC6lA4E");
   background-size: cover;
 
@@ -30,18 +42,8 @@ main {
     text-align: center;
 } */
 
-
-
-
-body {
-
-}
-
-/* Top Row */
 .row-top {
   height: 500px;
-}
-
 
 
 .col-h {
