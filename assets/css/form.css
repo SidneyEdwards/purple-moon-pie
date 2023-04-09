@@ -10,10 +10,11 @@ main{
 } 
 
 header {
-
   text-align: center;
   background: #13293d;
   color: #fff;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 
