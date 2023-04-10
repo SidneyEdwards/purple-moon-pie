@@ -15,7 +15,6 @@ main {
   border-radius: 20vw;
   padding: 50;
   justify-content: right;
-  margin-left:40%;
 
 }
 
@@ -27,6 +26,19 @@ main {
 
 }
 
+.responsive-img2 {
+  height: 100%;
+}
+
+.card-img-custom {
+  height: 300px;
+}
+
+.card-holding-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
  .card {
   background: #13293d;
