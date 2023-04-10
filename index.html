@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     
     <link rel="stylesheet" href="./assets/css/init-style.css"/>
+    <!-- <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script  defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
     <title>QRYou</title>
 </head>
 <body>
@@ -22,9 +24,9 @@
 
 <header class="img-wrapper">
 
-<div id="card">
-<img id= "logo" src="./assets/css/QRyou (2).jpg" alt="Q-R-you Logo" class="img-responsive">
-</div>
+    <div id="card-holding-div" style="display: flex; justify-content: center; padding: 20px">
+        <img id= "logo" src="./assets/css/QRyou (2).jpg" alt="Q-R-you Logo" class="img-responsive">
+    </div>
 </header>
 
 
@@ -46,18 +48,16 @@
         <div class="row" id="example-projects-container">
             <div class="col s12 m4" id="project-1">
                 <div class="card">
-                    <div class="card-image" id="example-1-project-picture">
-                        <img class="responsive-img" src="./assets/1450365441679.jpeg" alt="example 1 photo">
+                    <div class="card-image card-img-custom" id="example-1-project-picture">
+                        <img class="responsive-img2" src="./assets/1450365441679.jpeg" alt="example 1 photo">
                     </div>
-                    <div class="card-content">Demo 1</div>
-                    <div class="card-action"><button id="modal-btn1" class="btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
+                    <div class="card-content white-text">Demo 1</div>
+                    <div class="card-action"><button data-target="modal-project-1" id="modal-btn1" class="btn-flat orange-text text-accent-2 modal-trigger">Click here to view our QRYou code!</button></div>
                 </div>
-<!-- 
-                <!-- Modal  Project-1 HTML -->
 
                 <div class="modal" id="modal-project-1">
                     <div id="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="modal-close close">&times;</span>
                         <p>Scan our QRYOU code to view some of our links.</p>
                         <div id="QRYou-code-container"></div>
                     </div>
@@ -69,18 +69,22 @@
 
             <div class="col s12 m4" id="project-2">
                 <div class="card">
-                    <div class="card-image" id="example-2-project-picture">
-                        <img class="responsive-img" src="./assets/small_plunge_pool_options.jpg" alt="example 2 photo">
+                    <div class="card-image card-img-custom" id="example-2-project-picture">
+                        <img class="responsive-img2" src="./assets/small_plunge_pool_options.jpg" alt="example 2 photo">
                     </div>
-                    <div class="card-content">Demo 2</div>
-                    <div class="card-action"><button id="modal-btn2" class="btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
-                </div> -->
+                    <div class="card-content white-text">Demo 2</div>
+                    <div class="card-action">
+                        <a href="#modal-project-2" class="modal-trigger btn-flat orange-text text-accent-2">
+                            Click here to view our QRYou code!
+                        </a>
+                    </div>
+                </div>
 
                                 <!-- Modal  Project-2 HTML -->
 
                 <div class="modal" id="modal-project-2">
                     <div id="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="modal-close close">&times;</span>
                         <p>Scan our QRYou code to view some of our customer's personalized pages.</p>
                         <div id="QRYou-code-container"></div>
                     </div>
@@ -90,19 +94,19 @@
 
             <div class="col s12 m4" id="project-3">
                 <div class="card">
-                    <div class="card-image" id="example-3-project-picture">
-                        <img class="responsive-img" src="./assets/images/QRYou-Vistaprint-Share.png" alt="Vista-print hat, mug, and business card">
-                        <img class="responsive-img" src="./assets/images/QRYouSidsSitesFull.png" alt="Vista-print t-shirt and card"
+                    <div class="card-image card-img-custom" id="example-3-project-picture">
+                        <img class="responsive-img2" src="./assets/images/QRYou-Vistaprint-Share.png" alt="Vista-print hat, mug, and business card">
+                        <!-- <img class="responsive-img" src="./assets/images/QRYouSidsSitesFull.png" alt="Vista-print t-shirt and card"> -->
                     </div>
-                    <div class="card-content">Connect to VistaPrint to Share Your Profile with Customers</div>
-                    <div class="card-action"><button id="modal-btn3"class=" btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
+                    <div class="card-content white-text">Connect to VistaPrint to Share Your Profile with Customers</div>
+                    <div class="card-action"><button data-target="modal-project-3" id="modal-btn3"class=" modal-trigger btn-flat orange-text text-accent-2">Click here to view our QRYou code!</button></div>
                 </div>
 
                                 <!-- Modal  Project-3 HTML -->
 
                 <div class="modal" id="modal-project-3">
                     <div id="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="modal-close close">&times;</span>
                         <p>Scan our QRYOU code to view some of our links.</p>
                         <div id="QRYou-code-container"></div>
                     </div>
@@ -111,8 +115,15 @@
         </div>
     </main>
 
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
     <script src="./assets/js/init.js"></script>
-    <script src="./assets/js/modal.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+
+        })
+    </script>
+    <!-- <script src="./assets/js/modal.js"></script> -->
 </body>
 </html>
