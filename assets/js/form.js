@@ -4,6 +4,9 @@ var linkListEl = $('#added-links-list');
 var requestLinkedInURL = ""
 var localStorageBtn = document.getElementById("submit-local-storage-btn")
 
+
+
+
 // create function to handle form submission
 function submitLink(event) {
   event.preventDefault()
@@ -12,7 +15,6 @@ function submitLink(event) {
 
   // if there's nothing in the form entered, don't print to the page
   if (!linkItem) {
-
     return;
   }
   // print to the page
@@ -24,6 +26,9 @@ function submitLink(event) {
 }
 // Create a submit event listener on the form element
 linkFormEl.on('submit', submitLink);
+
+
+
 
 
 

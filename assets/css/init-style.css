@@ -110,12 +110,12 @@ margin-left: 90%;
   font-size: 40px;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(255, 255, 255, 0.584); /* Black w/ opacity */
+  background-color: white; /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: white;
   margin-left: 20px;
   padding: 20px;
   border: 1px solid #888;

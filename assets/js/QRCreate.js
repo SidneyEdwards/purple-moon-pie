@@ -6,6 +6,8 @@ var githubUsername = localStorage.getItem("githubUsername");
 var linkedInUsername = localStorage.getItem("linkedInUsername");
 var userInformationBtn = document.getElementById("userToggleBtn")
 var userContainer = document.getElementById("user-information-container")
+var githubRepos = localStorage.getItem('gitHubRepos')
+var appendRepo = document.getElementById('add')
 
 
 
@@ -23,6 +25,7 @@ var userContainer = document.getElementById("user-information-container")
 
 // var getQRCode = document.querySelector('#getQRCode-btn')
 // var requestQRCodeURL = ""
+
 
 
 function getApiQRCode(event) {
@@ -66,6 +69,16 @@ function displayUserInformation() {
     var linkedInUsernameEl = document.createElement("p")
     userContainer.append(linkedInUsernameEl)
     linkedInUsernameEl.innerHTML = linkedInUsername
+
+    function getRepo(){
+        var items = JSON.parse(localStorage.getItem("gitHubRepos"));
+        
+        var RepoItem1 = items[0].url
+        appendRepo.innerHTML  = RepoItem1
+        }
+        
+        getRepo()
+        
 }
 
 userInformationBtn.addEventListener("click", displayUserInformation);
